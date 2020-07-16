@@ -1,0 +1,26 @@
+body{
+    padding : 50px;
+    font : 14px "Lucida Grand", Arial, sans-serif;
+}
+
+#menu{
+    position : absolute;
+    top : 15px;
+    right: 20px;
+    font-size : 12px;
+    color : #888;
+}
+#menu a{
+    text-decoration: none;
+    margin-left: 5px;
+    color : #333;
+}
+#menu .name:after { 
+    content : ' - ' ;
+}
+
+#main {
+    position : absolute;
+    top : 30px;
+    color : #888;
+}

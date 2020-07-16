@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <%- include('../menu') %>
+    <h1><%= title %></h1>
+    <form method="POST" enctype="multipart/form-data">
+        <p><input type="text" name="name" placeholder="이름 입력"></p>
+        <p><input type="file" name="image"></p>
+        <p><input type="submit" value="Upload"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<% if(locals.user) { %>
+<div id="menu">
+    <span class="name"><%= user.name %> </span>
+    <a href="/postList"> 글 목록 </a>
+    <a href="/post"> 글 등록 </a>
+    <a href="/signout"> 로그아웃 </a>
+</div>
+<% } else { %>
+<div id="menu">
+    <a href="/"> 홈 </a>
+    <a href="/signin"> 로그인 </a>
+    <a href="/signup"> 회원가입 </a>
+</div>
+<% } %>

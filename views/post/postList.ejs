@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+</head>
+<body>
+    <%- include('../include/menu') %>
+    <h2><%= title %></h2>
+    <hr>
+    <% entries.forEach(function(entry){ %>
+        <div class="entry">
+            <h3>제목 : <%= entry.title %></h3>
+            <p>내용 : <%= entry.body %></p>
+            <p>작성자 : <%= entry.username %></p>
+            <hr>
+        </div>
+    <% }) %>
+
+    <%- include('pager') %>
+</body>
+</html>
